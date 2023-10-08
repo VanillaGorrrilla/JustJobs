@@ -49,7 +49,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
-                <select asp-for="Status" class="form-control"></select>
+                <select asp-for="Status" class="form-control">
+                    <option value="Pending">Pending</option>
+                    <option value="Applied">Applied</option>
+                    <option value="InterviewScheduled">Interview Scheduled</option>
+                    <option value="Offered">Offered</option>
+                    <option value="Rejected">Rejected</option>
+                    <option value="OnHold">On Hold</option>
+                </select>
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
             <div class="form-group">

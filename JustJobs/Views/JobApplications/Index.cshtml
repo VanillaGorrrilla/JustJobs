@@ -4,11 +4,12 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Applications</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">New</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -19,19 +20,16 @@
                 @Html.DisplayNameFor(model => model.CompanyName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.JobDescription)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Location)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ApplicationDate)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ResumePath)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Source)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApplicationDate)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Status)
@@ -49,19 +47,16 @@
                 @Html.DisplayFor(modelItem => item.CompanyName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.JobDescription)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Location)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ApplicationDate)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.ResumePath)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Source)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicationDate)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Status)
