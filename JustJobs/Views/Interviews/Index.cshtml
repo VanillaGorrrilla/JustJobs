@@ -13,25 +13,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.InterviewDate)
+                Interview Date
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Location)
+                Associated Application
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.VirtualMeetingLink)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.InterviewerName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.InterviewerEmail)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Feedback)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.JobApplication)
+                Location
             </th>
             <th></th>
         </tr>
@@ -43,22 +31,10 @@
                 @Html.DisplayFor(modelItem => item.InterviewDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Location)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.VirtualMeetingLink)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.InterviewerName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.InterviewerEmail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Feedback)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.JobApplication.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

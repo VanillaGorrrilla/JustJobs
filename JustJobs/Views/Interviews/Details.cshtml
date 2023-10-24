@@ -11,46 +11,46 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.InterviewDate)
+            Interview Date
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.InterviewDate)
         </dd>
+        <dt class="col-sm-2">
+            Associated Application
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.JobApplication.CompanyName)
+        </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Location)
+            Location
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Location)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.VirtualMeetingLink)
+            Meeting
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.VirtualMeetingLink)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.InterviewerName)
+            Interviewer Name
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.InterviewerName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.InterviewerEmail)
+            Interviewer Email
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.InterviewerEmail)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Feedback)
+            Feedback
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Feedback)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.JobApplication)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.JobApplication.CompanyName)
         </dd>
     </dl>
 </div>
